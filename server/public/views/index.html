@@ -4,15 +4,18 @@
     <title>Color Blocks</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <script type="text/javascript" src="/vendor/angular.min.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/clientapp.js"></script>
     <script type="text/javascript" src="/scripts/controllers/gameController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/settingsController.js"></script>
 </head>
 
 <body ng-app="colorBlocks" ng-controller="GameController">
-    <h1 id="color-prompt">{{colorPrompt}}</h1>
-    <h3 id="message-text">{{messageText}}</h3>
-    <div id="button-container">
-      <div class="color-button" ng-repeat="color in colors" ng-style="{background: color}" ng-click="handleInput(color)"></div>
-    </div>
+    <ul>
+      <li><a href="#play">Play Game</a></li>
+      <li><a href="#config">Settings</a></li>
+    </ul>
+
+    <main ng-view></main>
 </body>
 </html>
