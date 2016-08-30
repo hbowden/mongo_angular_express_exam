@@ -1,0 +1,16 @@
+{
+  "name": "ng-color-blocks",
+  "version": "1.0.0",
+  "description": "color block game in angular",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kris Szafranski",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "express": "^4.14.0"
+  }
+}
