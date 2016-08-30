@@ -1,7 +1,7 @@
 colorBlocks.controller('GameController', ['$scope', function($scope) {
 
 console.log('game controller running');
-$scope.colors = ['red', 'blue', 'green', 'peachpuff', 'brown', 'orange', 'indigo', 'black'];
+$scope.colors = ['red', 'blue', 'papayawhip'];
 
 // start game
 init();
