@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Color Blocks</title>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
     <script type="text/javascript" src="/vendor/angular.min.js"></script>
     <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
@@ -11,10 +13,7 @@
 </head>
 
 <body ng-app="colorBlocks" ng-controller="GameController">
-    <ul>
-      <li><a href="#play">Play Game</a></li>
-      <li><a href="#config">Settings</a></li>
-    </ul>
+    <header ng-include="'/views/templates/nav.html'"></header>
 
     <main ng-view></main>
 </body>
