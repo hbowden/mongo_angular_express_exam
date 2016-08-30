@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Blocks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="gameController.js"></script>
+</head>
+<body ng-app="colorBlocks" ng-controller="GameController">
+    <h1 id="color-prompt">{{colorPrompt}}</h1>
+    <h3 id="message-text">{{messageText}}</h3>
+    <div id="button-container">
+      <div class="color-button" ng-repeat="color in colors" ng-style="{background: color}" ng-click="handleInput(color)"></div>
+    </div>
+</body>
+</html>
