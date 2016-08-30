@@ -2,9 +2,6 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-
 // Serve back static files
 app.use(express.static(path.join(__dirname, './public')));
 
