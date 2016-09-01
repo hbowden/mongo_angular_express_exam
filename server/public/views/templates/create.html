@@ -1,0 +1,25 @@
+<div class="row">
+  <h1>Create new hero</h1>
+  <form>
+    <label for="color">Hero Alias</label>
+    <input name="alias" ng-model="hero.alias">
+    <label for="firstName">First Name</label>
+    <input name="firstname" ng-model="hero.firstName">
+    <label for="LastName">LastName</label>
+    <input name="lastName" ng-model="hero.lastName">
+    <label for="city">City</label>
+    <input name="city" ng-model="hero.city">
+    <label for="powerName">Power Name</label>
+    <select ng-model="hero.power">
+      <option value="Invisibility">Invisibility</option>
+      <option value="Flight">Flight</option>
+      <option value="Super Speed">Super Speed</option>
+      <option value="Heat Vision" selected>Heat Vision</option>
+      <option value="Super Strength" selected>Super Strength</option>
+      <option value="Accelerated Healing" selected>Accelerated Healing</option>
+      <option value="Power Blast" selected>Power Blast</option>
+      <option value="Animal Affinity" selected>Animal Affinity</option>
+    </select>
+    <button ng-click="handleAddHero(hero)">Add Hero</button>
+  </form>
+</div>

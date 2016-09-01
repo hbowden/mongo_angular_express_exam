@@ -1,9 +1,15 @@
 var express = require('express');
 var app = express();
+var heroes = require('./routes/heroes')
+var bodyParser = require('body-parser');
 var path = require('path');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/heroes');
 
 // Serve back static files
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './public')));
+app.use('/heroes', heroes);
 
 // Handle index file separately
 app.get('/', function(req, res) {

@@ -1,0 +1,13 @@
+<div class="row" id="heroview">
+  <h1>Hero Manager<h1>
+  <div id="button-container">
+    <div class="heroStyle" ng-repeat="hero in heroes">
+      <h2>{{hero.alias}}</h2>
+      <p>{{hero.firstName}}</p>
+      <p>{{hero.lastName}}</p>
+      <p>{{hero.city}}</p>
+      <p>{{hero.power}}</p>
+      <button class="delete" ng-click="handleDeleteHero(hero._id)">Delete</button>
+    </div>
+  </div>
+</div>

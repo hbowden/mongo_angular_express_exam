@@ -2,14 +2,50 @@ main {
   margin: 50px;
 }
 
-#gameview {
-  width: 90%;
-  margin: 20px;
+label {
+  display: block;
 }
-.color-button {
-    width: 120px;
-    height: 120px;
-    float: left;
-    margin: 10px;
-    cursor: pointer;
+
+.delete {
+  width: 125px;
+  margin: 0 auto;
+
+}
+
+select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.heroStyle {
+  display: block-inline;
+  float: left;
+  margin-left: 35px;
+  padding: 15px;
+  border:1px solid black;
+  background-color: lightblue;
+}
+
+input {
+  display: block;
+  margin 5px;
+  text-align: center;
+}
+
+form {
+  height:20px;
+  width:100px;
+  margin: -20px -50px;
+  position:relative;
+  top:50%;
+  left:50%;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 50%;
 }
