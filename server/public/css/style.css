@@ -29,7 +29,6 @@ select {
 input {
   display: block;
   margin 5px;
-  text-align: center;
 }
 
 form {
