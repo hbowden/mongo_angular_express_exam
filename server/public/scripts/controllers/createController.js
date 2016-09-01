@@ -1,5 +1,5 @@
 app.controller('CreateController', ['$scope', '$http', function($scope, $http) {
-  function createHeroe(hero) {
+  function createHero(hero) {
     var promise = $http({
       method: 'POST',
       url: '/heroes',
@@ -15,7 +15,7 @@ app.controller('CreateController', ['$scope', '$http', function($scope, $http) {
   }
 
   $scope.handleAddHero = function(hero) {
-    createHeroe(hero).then(function(res) {
+    createHero(hero).then(function(res) {
       // Set input fields back to blank.
       $scope.hero = {};
     });
