@@ -5,7 +5,9 @@
   "main": "server/app.js",
   "scripts": {
     "test": "nodemon server/app.js",
-    "start": "node server/app.js"
+    "start": "node server/app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Kris Szafranski",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
-    "mongoose": "^4.5.10"
-  }
+    "mongoose": "^4.5.10",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
